@@ -1,5 +1,5 @@
 <template>
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container">
       <h2 class="contacts__title">Контакты</h2>
 
@@ -36,14 +36,6 @@
             </div>
         </div>
       </div>
-
-      <!-- <div class="contacts__address">
-        <h3 class="contacts__address-title">Наш адрес</h3>
-        <p class="contacts__address-text">
-          г. Москва, ул. Примерная, дом 1, офис 101
-        </p>
-        <a class="contacts__address-link" href="tel:+74991107987">+7 (499) 110-7987</a>
-      </div> -->
     </div>
   </section>
 </template>

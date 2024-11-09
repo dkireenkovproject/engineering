@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section id="about" class="hero">
     <div class="container">
       <div class="hero__content">
       <div class="hero__wrapper-1">

@@ -2,30 +2,76 @@
   <header class="header">
     <div class="container">
       <div class="header__wrap">
-        <span class="header__logo">B3 Development</span>
+        <img class="header__logo" src="/img/logo.svg" alt="logo">
         <nav class="header__nav">
           <ul class="header__list list-reset">
             <li class="header__item"><NuxtLink class="header__link" to="/">Главная</NuxtLink></li>
-            <li class="header__item"><NuxtLink class="header__link" to="/">О нас</NuxtLink></li>
-            <li class="header__item"><NuxtLink class="header__link" to="/">Контакты</NuxtLink></li>
-            <li class="header__item"><NuxtLink class="header__link" to="/">Проекты</NuxtLink></li>
+            <li class="header__item"><a class="header__link" @click="scroll1">О нас</a></li>
+            <li class="header__item"><a class="header__link" @click="scroll2">Контакты</a></li>
+            <li class="header__item"><a class="header__link" @click="scroll3">Проекты</a></li>
           </ul>
         </nav>
-        <button class="header__btn btn-reset">Контакты</button>
+        <button class="header__btn btn-reset" @click="OpenPopup">Контакты</button>
+        <CommonPopUp style="position: absolute;" v-if="isOpen" @close-form="close"/>
       </div>
     </div>
   </header>
 </template>
 
 <script lang="ts" setup>
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
+gsap.registerPlugin(ScrollToPlugin)
+gsap.registerPlugin(ScrollTrigger)
+
+const isOpen = ref(false)
+const close = () => {
+  isOpen.value = false
+}
+
+const OpenPopup = () => {
+  isOpen.value = true
+}
+
+const scroll1 = () => {
+  const scrollSection1 = document.getElementById('about')
+  if (scrollSection1) {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: { y: scrollSection1, offsetY: 20 },
+      ease: 'power2.inOut'
+    })
+  }
+}
+const scroll2 = () => {
+  const scrollSection2 = document.getElementById('contacts')
+  if (scrollSection2) {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: { y: scrollSection2, offsetY: 20 },
+      ease: 'power2.inOut'
+    })
+  }
+}
+const scroll3 = () => {
+  const scrollSection3 = document.getElementById('projects')
+  if (scrollSection3) {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: { y: scrollSection3, offsetY: 20 },
+      ease: 'power2.inOut'
+    })
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .header {
   padding-bottom: 80px;
   &__wrap {
-    padding: 50px 0px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +88,7 @@
 		font-style: normal;
 		font-weight: 400;
     text-decoration: none;
+    cursor: pointer;
     transition: color 0.3s ease-in-out;
     &::after {
       content: '';
@@ -83,7 +130,10 @@
       color: #ffffff;
     }
   } 
-
+&__logo {
+  width: 200px;
+  height: 200px;
+}
 
 }
 </style>
