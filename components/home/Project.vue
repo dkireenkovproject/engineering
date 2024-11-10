@@ -74,6 +74,9 @@ onMounted(() => {
 <style lang="scss" scoped>
 .project {
   padding-bottom: 150px; 
+  @media screen and (max-width: 600px) {
+    padding-bottom: 100px; 
+  }
   &__title {
   margin-bottom: 50px;
     color: #000000;
@@ -81,6 +84,13 @@ onMounted(() => {
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 1482px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
 }
 &__description {
   margin-bottom: 35px;
@@ -91,6 +101,12 @@ onMounted(() => {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    @media screen and (max-width: 1482px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
 }
 &__wrapper-content {
       display: flex;
@@ -101,7 +117,12 @@ onMounted(() => {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-
+      @media screen and (max-width: 1300px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     }
     &__img {
     width: 100%;

@@ -70,15 +70,28 @@ const scroll3 = () => {
 <style lang="scss" scoped>
 .header {
   padding-bottom: 80px;
+  @media screen and (max-width: 600px) {
+    padding-bottom: 50px;
+    }
   &__wrap {
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1300px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
   &__list {
     display: flex;
     gap: 70px;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 600px) {
+    column-gap: 30px;
+    }
   }
   &__link {
     position: relative;
@@ -107,6 +120,15 @@ const scroll3 = () => {
     &:hover {
       color: #029444;
     }
+    @media screen and (max-width: 1300px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 356px) {
+      font-size: 18px;
+    }
   }
   &__logo {
     color: #000;
@@ -129,10 +151,21 @@ const scroll3 = () => {
       background: #029444;
       color: #ffffff;
     }
+    @media screen and (max-width: 1300px) {
+  padding: 5px 30px;
+  font-size: 16px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+    }
   } 
 &__logo {
   width: 200px;
   height: 200px;
+  @media screen and (max-width: 1300px) {
+    width: 150px;
+    height: 150px;
+    }
 }
 
 }

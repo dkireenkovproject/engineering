@@ -31,7 +31,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .loading-spinner {
   position: fixed;
   top: 50%;
@@ -58,5 +58,11 @@ align-items: center;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 14px;
+    }
 }
 </style>

@@ -77,6 +77,15 @@ height: auto;
     background-color: #e4e7eb;
     box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
     border-radius: 30px;
+    @media screen and (max-width: 1300px) {
+      min-width: 330px;
+      padding: 30px 20px;
+    }
+    @media screen and (max-width: 380px) {
+      min-width: 100%;
+      padding: 40px 20px;
+      margin:0;
+    }
   }
 &__contact-wrapper {
   display: flex;
@@ -102,6 +111,9 @@ height: auto;
     font-family: 'Akrobat', sans-serif;
     font-size: 40px;
     font-weight: 700;
+    @media screen and (max-width: 1300px) {
+      font-size: 30px;
+    }
   }
 
   &__contact {
@@ -113,7 +125,13 @@ height: auto;
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 1300px) {
+      padding: 10px;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 20px 50px;
 
+    }
     &-name {
       font-size: 18px;
       font-family: 'Akrobat';

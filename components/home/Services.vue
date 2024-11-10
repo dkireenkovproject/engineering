@@ -54,6 +54,12 @@ onMounted(() => {
 <style lang="scss" scoped>
 .services {
 padding-bottom: 200px;
+@media screen and (max-width: 1482px) {
+  padding-bottom: 150px;
+}
+@media screen and (max-width: 600px) {
+  padding-bottom: 100px;
+}
 &__title {
   margin-bottom: 70px;
   text-align: center;
@@ -62,6 +68,14 @@ padding-bottom: 200px;
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 40px;
+      font-size: 35px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
 }
 &__img {
   width: 100%;
@@ -73,12 +87,27 @@ padding-bottom: 200px;
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(4, 1fr);
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 50px;
+  }
+  @media screen and (max-width: 879px) {
+    column-gap: 30px;
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 }
 &__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 23px;
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 &__description {
   max-width: 330px;

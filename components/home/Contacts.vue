@@ -47,6 +47,12 @@
 <style lang="scss" scoped>
 .contacts {
   padding-bottom: 100px;
+  @media screen and (max-width: 1300px) {
+    padding-bottom: 150px;
+    }
+    @media screen and (max-width: 600px) {
+      padding-bottom: 100px;
+    }
   &__title {
     margin-bottom: 40px;
     text-align: center;
@@ -55,11 +61,18 @@
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
   }
   &__ph-mail {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    @media screen and (max-width: 600px) {
+      align-items: center;
+    }
   }
 &__style-wrap {
   display: flex;
@@ -75,6 +88,9 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    @media screen and (max-width: 1300px) {
+       flex-direction: column;
+    }
   }
   &__name {
       margin-bottom: 10px;
@@ -83,6 +99,10 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+      text-align: center;
+    }
     }
 &__card {
   background: #f4f4f4;
@@ -90,6 +110,9 @@
     border-radius: 8px;
     width: calc(33.33% - 20px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 1300px) {
+     width: 100%;
+    }
 }
 &__style-link {
   color: #201919;

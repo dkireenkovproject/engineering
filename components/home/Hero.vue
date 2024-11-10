@@ -97,21 +97,37 @@ onMounted(() => {
 <style lang="scss" scoped>
 .hero {
   padding-bottom: 120px;
+  @media screen and (max-width: 1300px) {
+    padding-bottom: 150px;
+  }
+  @media screen and (max-width: 600px) {
+    padding-bottom: 100px;
+    }
 &__content {
   display: flex;
   gap: 50px;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1300px) {
+  flex-direction: column;
+  justify-content: space-between;
+    }
 }
 &__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  @media screen and (max-width: 879px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 &__wrapper-1 {
   display: flex;
   flex-direction: column;
   width: 50%;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+    }
 }
 &__title {
   margin-bottom: 50px;
@@ -120,6 +136,14 @@ onMounted(() => {
 		font-size: 45px;
 		font-style: normal;
 		font-weight: 700;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 40px;
+      font-size: 35px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
 }
 &__description {
   margin-bottom: 50px;
@@ -128,6 +152,10 @@ onMounted(() => {
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
 }
 &__number {
   display: block;
@@ -137,6 +165,12 @@ onMounted(() => {
 		font-size: 30px;
 		font-style: normal;
 		font-weight: 700;
+    @media screen and (max-width: 1300px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 879px) {
+      margin-bottom: 10px;
+    }
 }
 &__text {
   color: #000;
@@ -147,6 +181,14 @@ onMounted(() => {
 }
 &__wrapper-3 {
   width: 100%;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
+&__wrapper-2 {
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 }
 &__img {
   object-fit: cover;}
