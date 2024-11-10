@@ -91,6 +91,9 @@ height: auto;
   display: flex;
   align-items: center;
   gap: 5px;
+  @media screen and (max-width: 1300px) {
+      justify-content: center;
+      }
 }
 &__img {
   width: 20px;
@@ -130,7 +133,6 @@ height: auto;
     }
     @media screen and (max-width: 380px) {
       padding: 20px 50px;
-
     }
     &-name {
       font-size: 18px;
@@ -138,6 +140,9 @@ height: auto;
       font-weight: 600;
       margin-bottom: 5px;
       font-style: normal;
+      @media screen and (max-width: 1300px) {
+        text-align: center;
+      }
     }
 
     &-position {
@@ -147,6 +152,9 @@ height: auto;
       font-style: normal;
       font-weight: 400;
       color: #666;
+      @media screen and (max-width: 1300px) {
+        text-align: center;
+      }
     }
 
     &-email, &-phone {
