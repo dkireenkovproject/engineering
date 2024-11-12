@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__top">
@@ -15,8 +15,8 @@
 
           <nav class="footer__nav">
             <ul class="footer__items footer__mobile list-reset">
-              <li class="footer__item"><span class="footer__text">Офис в Москве: </span><span href="tel:+74991107987" class="footer__link">ул. Примерная, дом 1, офис 101</span></li>
-              <li class="footer__item"><span class="footer__text">Телефон: </span><a href="tel:+74991107987" class="footer__link">+7 (499) 110-7987</a></li>
+              <li class="footer__item"><span class="footer__text">Адрес: </span><span href="tel:+74991107987" class="footer__link">143502, Московская Область, г.о. Истра, г Истра, ул Почтовая, зд. 4А</span></li>
+              <li class="footer__item"><span class="footer__text">Телефон: </span><a href="tel:+74993412124" class="footer__link">+7 (499) 341-21-24</a></li>
             </ul>
           </nav>
 
@@ -115,6 +115,9 @@ gap: 25px;
     align-items: center;
     gap: 20px;
   }
+}
+&__item {
+  text-align: center;
 }
 }
 </style>

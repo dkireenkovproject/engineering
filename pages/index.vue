@@ -4,7 +4,7 @@
     <HomeHero />
     <HomeServices />
     <HomeProject />
-    <HomeContacts />
+    <!-- <HomeContacts /> -->
     <FooterLayout />
   </div>
 </template>

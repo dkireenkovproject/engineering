@@ -6,12 +6,12 @@
       <p class="project__description">Наше портфолио — это примеры проектов, выполненных с акцентом на качество, передовые технологии и индивидуальный подход к потребностям клиентов.</p>
     <ul class="project__list list-reset">
       <li class="project__item">
-          <img class="project__img" src="/img/project-1.png" alt="project1">
-          <img class="project__img" src="/img/project-2.png" alt="project2">
-          <img class="project__img" src="/img/project-3.png" alt="project3">
-          <img class="project__img" src="/img/project-4.png" alt="project4">
-          <img class="project__img" src="/img/project-5.png" alt="project5">
-          <img class="project__img" src="/img/project-6.png" alt="project6">
+          <img class="project__img" src="/img/1.jpg" alt="project1">
+          <img class="project__img" src="/img/2.jpg" alt="project2">
+          <img class="project__img" src="/img/3.jpg" alt="project3">
+          <img class="project__img" src="/img/4.jpg" alt="project4">
+          <img class="project__img" src="/img/5.jpg" alt="project5">
+          <img class="project__img" src="/img/6.jpg" alt="project6">
       </li>
     </ul>
     </div>
