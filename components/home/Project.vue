@@ -140,7 +140,7 @@ onMounted(() => {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      row-gap: 70px;
+      row-gap: 80px;
       @media screen and (max-width: 1300px) {
         grid-template-columns: repeat(2, 1fr);
     }
