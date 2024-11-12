@@ -7,12 +7,35 @@
     <ul class="project__list list-reset">
       <li class="project__item">
           <img class="project__img" src="/img/1.jpg" alt="project1">
-          <img class="project__img" src="/img/2.jpg" alt="project2">
-          <img class="project__img" src="/img/3.jpg" alt="project3">
-          <img class="project__img" src="/img/4.jpg" alt="project4">
-          <img class="project__img" src="/img/5.jpg" alt="project5">
-          <img class="project__img" src="/img/6.jpg" alt="project6">
+          <p class="project__text">HILTON GARDEN INN GOLDEN GATE
+          </p>
       </li>
+      <li class="project__item">
+        <img class="project__img" src="/img/2.jpg" alt="project2">
+                  <p class="project__text">Культурно-развлекательный комплекс в городе Магас</p>
+
+      </li>
+      <li class="project__item">
+        <img class="project__img" src="/img/3.jpg" alt="project3">
+                  <p class="project__text">SQUIRE PATTON BOGGS
+                  </p>
+
+      </li>
+      <li class="project__item">
+        <img class="project__img" src="/img/4.jpg" alt="project4"> 
+                <p class="project__text">Офис компании NAVIGATOR
+                </p>
+     </li>
+      <li class="project__item">
+        <img class="project__img" src="/img/5.jpg" alt="project5"> 
+                <p class="project__text">Частные апартаменты в гостинице «МОСКВА» («FOUR SEASONS»)
+                </p>
+     </li>
+      <li class="project__item">
+        <img class="project__img" src="/img/6.jpg" alt="project6">  
+                <p class="project__text">Проектирование кинозалов, поставка, монтаж, настройка оборудования
+                </p>
+    </li>
     </ul>
     </div>
     </div>
@@ -38,7 +61,7 @@ onMounted(() => {
     },
   })
 
- gsap.from('.project__img', {
+ gsap.from('.project__item', {
     y: 0,               
     opacity: 0,           
     duration: 1.5,        
@@ -113,10 +136,11 @@ onMounted(() => {
       flex-direction: column;
      align-items: center;
     }
-    &__item {
+    &__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      row-gap: 70px;
       @media screen and (max-width: 1300px) {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -128,6 +152,23 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 20px;
+  }
+  &__text {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center ;
+    color: #000000;
+    font-family: 'Akrobat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    @media screen and (max-width: 1482px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
 }
